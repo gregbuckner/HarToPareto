@@ -23,10 +23,10 @@ parser.add_option('-v', '--verbose', help = 'Verbose option prints detailed requ
 (opts, args) = parser.parse_args()
 
 if opts.url is None:
-    print 'No URL provided, supply the url using the -u or --url option'
+    print 'Error: *** No URL provided ***. Please supply the url using the -u or --url option'
     exit(-1)
 elif opts.userName is None:
-    print 'No username was provided to login to the application, supply the username using the -n or --username option'
+    print 'Error: *** No username was provided for application login ***. Please supply application username using the -n or --username option'
     exit(-1)
 
 print 'Starting HAR to Perato Generator with %d iterations executing every %d seconds...' % (opts.iterations, opts.frequency)
